@@ -27,10 +27,10 @@ get '/movie_details' do
     imdb_votes = result["imdbVotes"]
     production = result["Production"]
     erb(:movie_details, locals: {
-        movie_title: title,
+        title: title,
         movie_year: year_released,
-        movie_director: director,
-        movie_actors: actors,
+        director: director,
+        actors: actors,
         image_link: image_link,
         genre: genre,
         plot: plot,
