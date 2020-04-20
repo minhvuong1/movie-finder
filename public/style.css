@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.movie_details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image {
+    display: grid;
+    justify-content: right;
+    padding-top: 20px;
+    padding-right: 70px;
+}
+
+footer {
+    margin-top: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+.home-section {
+    text-align: center;
+    display: grid;
+    padding-top: 200px;
+}
