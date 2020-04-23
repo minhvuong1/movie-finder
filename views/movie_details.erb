@@ -1,21 +1,20 @@
-<h1><%= title %></h1> 
+<h1><%= movie["Title"] %></h1> 
 <div class="movie_details">
     <div class="image">
-        <img src="<%= image_link %>">
+        <img src="<%= movie["Poster"] %>">
     </div>
     <div class="info">
-        <p><b>Year:</b> <%= movie_year %> </p>
-        <p><b>Director:</b> <%= director %>  </p>
-        <p><b>Actors:</b> <%= actors %> </p>
-        <p><b>Writers:</b> <%= writer %>  </p>
-        <p><b>Genre:</b> <%= genre %> </p>
-        <p><b>Plot:</b> <%= plot %> </p>
-        <p><b>Runtime:</b> <%= runtime %> </p>
-        <p><b>Box Office:</b> <%= box_office %> </p>
-        <p><b>Production:</b> <%= production %> </p>
-        <p><b>Metascore:</b> <%= metascore %> </p>
-        <p><b>IMDB Rating:</b> <%= imdb_rating %> </p>
-        <p><b>IMDB Votes:</b> <%= imdb_votes %> </p>
+        <p><b>Year:</b> <%= movie["Year"] %> </p>
+        <p><b>Director:</b> <%= movie["Director"] %>  </p>
+        <p><b>Actors:</b> <%= movie["Actors"] %> </p>
+        <p><b>Writers:</b> <%= movie["Writer"] %>  </p>
+        <p><b>Genre:</b> <%= movie["Genre"] %> </p>
+        <p><b>Plot:</b> <%= movie["Plot"] %> </p>
+        <p><b>Runtime:</b> <%= movie["Runtime"] %> </p>
+        <p><b>Box Office:</b> <%= movie["BoxOffice"] %> </p>
+        <p><b>Production:</b> <%= movie["Production"] %> </p>
+        <p><b>Metascore:</b> <%= movie["Metascore"] %> </p>
+        <p><b>IMDB ID:</b> <%= movie["imdbID"] %> </p>
         <a href="/">Go back</a>
     </div>
 </div>
