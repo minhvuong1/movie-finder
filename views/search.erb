@@ -1,0 +1,9 @@
+<h1>Search Results</h1>
+<div class="search_result_section">
+    <% movies.each do |movie| %>   
+        <p><a href="/movie_details/<%=movie["Title"]%>"><img src="<%=movie["Poster"]%>"></a></p>
+    <% end %>   
+</div>
+    <br><br>
+    <a class="back" href="/">Go Back to Home</a>
+</ol>

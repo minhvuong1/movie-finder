@@ -1,20 +1,18 @@
-<h1><%= movie["Title"] %></h1> 
 <div class="movie_details">
-    <div class="image">
-        <img src="<%= movie["Poster"] %>">
+    <div>
+        <% if movie["title"] %> 
+            <h1><%= movie["title"] %></h1> 
+            <h2> <%= movie["year"]%> </h2>
+            <img src="<%= movie["image_url"] %>">
+            <p>Using local database</p>
+        <% else %>
+            <h1><%= movie["Title"] %></h1> 
+            <h2> <%= movie["Year"] %> </h2>
+            <img src="<%= movie["Poster"] %>">
+        <% end %>
     </div>
-    <div class="info">
-        <p><b>Year:</b> <%= movie["Year"] %> </p>
-        <p><b>Director:</b> <%= movie["Director"] %>  </p>
-        <p><b>Actors:</b> <%= movie["Actors"] %> </p>
-        <p><b>Writers:</b> <%= movie["Writer"] %>  </p>
-        <p><b>Genre:</b> <%= movie["Genre"] %> </p>
-        <p><b>Plot:</b> <%= movie["Plot"] %> </p>
-        <p><b>Runtime:</b> <%= movie["Runtime"] %> </p>
-        <p><b>Box Office:</b> <%= movie["BoxOffice"] %> </p>
-        <p><b>Production:</b> <%= movie["Production"] %> </p>
-        <p><b>Metascore:</b> <%= movie["Metascore"] %> </p>
-        <p><b>IMDB ID:</b> <%= movie["imdbID"] %> </p>
-        <a href="/">Go back</a>
+    <div>
+        <br><br>
+        <a class="back" href="/">Go Back to Home</a>
     </div>
 </div>
