@@ -14,7 +14,6 @@ def find_movie_by_image_url(image_url)
     run_sql("SELECT * FROM movies where image_url = $1", [image_url]);
 end
 
-
 def find_movie_by_title(title)
     run_sql("SELECT * FROM movies where title = $1", [title]);
 end

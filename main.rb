@@ -28,7 +28,9 @@ get '/movie_details/:title' do
     else 
         url = "http://omdbapi.com/?t=#{movie_title}&apikey=#{ENV['OMDB_API_KEY']}"
         result = HTTParty.get(url)
-        store_movie(result["Title"], result["Poster"], result["Year"])
+        if find_movie_by_image_url(result["Poster"]).count == 0
+            store_movie(result["Title"], result["Poster"], result["Year"])
+        end 
         erb(:movie_details, locals: {
             movie: result
         })
